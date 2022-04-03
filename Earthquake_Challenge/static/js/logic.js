@@ -4,6 +4,9 @@ console.log("working");
 // Create the map object with center at the San Francisco airport.
 let map = L.map('mapid').setView([37.5, -122.5], 10);
 
+// Accessing the airport GeoJSON URL
+let airportData = "https://raw.githubusercontent.com/IrvingHdez/Mapping_Earthquakes/main/majorAirports.json";
+
 // Add GeoJSON data.
 let sanFranAirport =
 {"type":"FeatureCollection","features":[{
