@@ -67,22 +67,6 @@ legend.onAdd = function() {
 
 legend.addTo(map);
 
-// Then add all the details for the legend.
-legend.onAdd = function() {
-  const magnitudes = [0, 1, 2, 3, 4, 5];
-  const colors = [
-    "#98ee00",
-    "#d4ee00",
-    "#eecc00",
-    "#ee9c00",
-    "#ea822c",
-    "#ea2c2c"
-  ];
-
-  let div = L.DomUtil.create("div", "info legend");
-  
-};
-
 // Then we add a control to the map that will allow the user to change
 // which layers are visible.
 L.control.layers(baseMaps, overlays).addTo(map);
